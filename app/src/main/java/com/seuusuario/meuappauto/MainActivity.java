@@ -13,6 +13,8 @@ public class MainActivity extends Activity {
         WebView webView = new WebView(this);
         webView.getSettings().setJavaScriptEnabled(true); // Permite rodar scripts do seu HTML
         webView.getSettings().setDomStorageEnabled(true); // Ajuda a carregar elementos modernos do Lovable
+        webView.getSettings().setMediaPlaybackRequiresUserGesture(false);
+        webView.getSettings().setAllowFileAccess(true);
         webView.setWebViewClient(new WebViewClient());
         
         // Carrega o seu arquivo index.html da pasta assets
