@@ -14,3 +14,9 @@ android {
         versionName "1.0"
     }
 }
+
+// Isso força o projeto do aplicativo a usar as fontes de download corretas e seguras
+repositories {
+    google()
+    mavenCentral()
+}
